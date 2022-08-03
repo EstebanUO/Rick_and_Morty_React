@@ -21,7 +21,7 @@ export const Main = () => {
 
     const [texto, setTexto] = useState('');
 
-    const inputCharacters = characters.filter((character) => character.name.toLocaleLowerCase())
+    const inputCharacters = characters.filter((character) => character.name.toLocaleLowerCase().includes(texto.toLowerCase())
 
   return (
     <div>
