@@ -19,9 +19,9 @@ export const Main = () => {
         asyncFetchData();
     }, [])
 
-    const [texto, setTexto] = useState("")
+    const [texto, setTexto] = useState('');
 
-    const inputCharacters = characters.filter((character) => character.name.toUpperCase())
+    const inputCharacters = characters.filter((character) => character.name.toLocaleLowerCase())
 
   return (
     <div>
